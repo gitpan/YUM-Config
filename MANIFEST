@@ -1,0 +1,9 @@
+Changes
+Makefile.PL
+MANIFEST
+doc/README
+doc/examples/example1.pl
+doc/examples/example2.pl
+t/YUM-Config.t
+lib/YUM/Config.pm
+META.yml                                 Module meta-data (added by MakeMaker)

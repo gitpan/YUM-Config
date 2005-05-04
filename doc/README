@@ -1,0 +1,45 @@
+YUM::Config version 0.01
+=======================
+
+YUM::Config is use to parse a yum.conf file. It downloads remote include
+files, or includes local include files. It is able to download mirrorlists
+and include it. And it is able to parse the primary.xml.gz.
+
+yum (the 'yellow dog updater modified') is a tool primary used at
+Fedora machines to keep the system up2date.
+
+As I was not able to find a module on CPAN, that provides this, so I
+had to write my own; And here is it. Have fun with it.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  Config::IniHash
+  Hash::Merge
+  LWP::UserAgent
+  File::Temp
+  File::Remove
+  XML::LibXML
+  Cache::File
+  RPM2
+  FreezeThaw
+  Sort::Versions
+  PerlIO::gzip
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2005 by Oliver Falk <oliver@linux-kernel.at>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.6 or,
+at your option, any later version of Perl 5 you may have available.
